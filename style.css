@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+ }
+
+ .body{
+    background: url("../Background-2.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+ }
+
+ #scoreBox {
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: "Sofadi One", system-ui;
+}
+
+#hiscoreBox {
+    position: absolute; /* Keep it absolute to align with the score box */
+    top: 120px; /* Adjust this value to position it below the score box */
+    right: 100px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: "Sofadi One", system-ui;
+    color: black; /* Color for high score */
+}
+
+#board {
+    position: absolute;
+    top: 90px;  /* Adjust the position to your liking */
+    left: 480px; /* Adjust the position to your liking */
+    background-color: rgb(10, 100, 10);
+    width: 100vmin;
+    height: 57vmin;
+    display : grid;
+    grid-template-rows:repeat(18 , 1fr);
+    grid-template-columns:repeat(18 , 1fr);
+   
+}
+
+.head{
+    background: linear-gradient(yellow,black);
+    border: 2px solid white;
+    transform: scale(1.02);
+    border-radius:9px;
+}
+
+.snake{
+    background-color: black;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+ .food{
+    background: linear-gradient(red,rgb(4, 40, 4));
+    border: .25vmin solid white;
+    border-radius: 8px;
+     
+ }
